@@ -26,7 +26,6 @@ public class Recursive {
         }
         return maxNumber(array, maxNum - 1);
     }
-
     public static int numbOfC(String string, int number) {
         if (number == 1) {
             if (!Character.toString(string.charAt(0)).equals("a") && !Character.toString(string.charAt(0)).equals("e") && !Character.toString(string.charAt(0)).equals("i") &&
