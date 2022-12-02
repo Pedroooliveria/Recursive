@@ -26,20 +26,20 @@ public class Recursive {
         }
         return maxNumber(array, maxNum - 1);
     }
-    public static int numbOfC(String string, int number) {
-        if (number == 1) {
-            if (!Character.toString(string.charAt(0)).equals("a") && !Character.toString(string.charAt(0)).equals("e") && !Character.toString(string.charAt(0)).equals("i") &&
-                    !Character.toString(string.charAt(0)).equals("o") && !Character.toString(string.charAt(0)).equals("u")) {
+    public static int numConsoantes(String name, int num) {
+        if (num == 1) {
+            if (!Character.toString(name.charAt(0)).equals("a") && !Character.toString(name.charAt(0)).equals("e") && !Character.toString(name.charAt(0)).equals("i") &&
+                    !Character.toString(name.charAt(0)).equals("o") && !Character.toString(name.charAt(0)).equals("u")) {
                 return 1;
             } else {
                 return 0;
             }
         }
-        if (!Character.toString(string.charAt(number - 1)).equals("a") && !Character.toString(string.charAt(number - 1)).equals("e") && !Character.toString(string.charAt(number - 1)).equals("i") &&
-                !Character.toString(string.charAt(number - 1)).equals("o") && !Character.toString(string.charAt(number - 1)).equals("u")) {
-            return numbOfC(string, number - 1) + 1;
+        if (!Character.toString(name.charAt(num - 1)).equals("a") && !Character.toString(name.charAt(num - 1)).equals("e") && !Character.toString(name.charAt(num - 1)).equals("i") &&
+                !Character.toString(name.charAt(num - 1)).equals("o") && !Character.toString(name.charAt(num - 1)).equals("u")) {
+            return numConsoantes(name, num - 1) + 1;
         } else {
-            return numbOfC(string, number - 1);
+            return numConsoantes(name, num - 1);
         }
     }
 }

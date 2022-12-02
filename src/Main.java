@@ -7,7 +7,7 @@ public class Main {
         System.out.println(Recursive.maxNumber(myArray, myArray.length));
 
         String string="pedro";
-        System.out.println(Recursive.numbOfC("Pedro",string.length()));
+        System.out.println(Recursive.numConsoantes("Pedro",string.length()));
 
     }
 }
